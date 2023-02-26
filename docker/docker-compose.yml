@@ -91,7 +91,7 @@ services:
         connections, generally to port 3306 of db containers
         and is not typically used with an interactive shell.
 
-      - SSH_USERS=user:2000:2000
+      - SSH_USERS=user:1000:1000
       - TCP_FORWARDING=true
     restart: ${WARDEN_RESTART_POLICY:-always}
 
