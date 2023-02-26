@@ -103,5 +103,8 @@ if [[ ! -f "${WARDEN_HOME_DIR}/.env" ]]; then
 	cat >> "${WARDEN_HOME_DIR}/.env" <<-EOT
 		# Set to "1" to enable global Portainer service
 		DEN_SERVICE_PORTAINER=0
+
+		# Remove the variable if you want to use official images
+		WARDEN_IMAGE_REPOSITORY=ghcr.io/canaryengine
 	EOT
 fi
