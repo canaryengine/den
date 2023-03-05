@@ -12,4 +12,4 @@ WARDEN_ENV_SHELL_CONTAINER=${WARDEN_ENV_SHELL_CONTAINER:-php-fpm}
 trap '' ERR
 
 "${WARDEN_DIR}/bin/den" env exec "${WARDEN_ENV_SHELL_CONTAINER}" \
-    php n98-magerun "${WARDEN_PARAMS[@]}" "$@"
+    n98-magerun "${WARDEN_PARAMS[@]}" "$@"
